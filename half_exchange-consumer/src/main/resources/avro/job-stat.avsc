@@ -1,0 +1,29 @@
+{
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "name": "count",
+      "type": "int"
+    },
+    {
+      "name": "jobName",
+      "type": {
+        "avro.java.string": "String",
+        "type": "string"
+      }
+    },
+    {
+      "name": "description",
+      "type": [
+        {
+          "avro.java.string": "String",
+          "type": "string"
+        },
+        "null"
+      ]
+    }
+  ],
+  "name": "JobStat",
+  "namespace": "com.mycorp.mynamespace",
+  "type": "record"
+}
